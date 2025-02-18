@@ -12,3 +12,13 @@ class Book:
     def is_long(self) -> bool:
         """Return True if the book has more than 300 pages."""
         return self.pages > 300
+
+# Example usage:
+book1 = Book("Harry Potter", "J.K. Rowling", 500)
+book2 = Book("Python Programming", "John Doe", 150)
+
+print(book1.get_book_info())  # Output: Title: Harry Potter, Author: J.K. Rowling
+print(book2.get_book_info())  # Output: Title: Python Programming, Author: John Doe
+
+print(book1.is_long())  # Output: True
+print(book2.is_long())  # Output: False
